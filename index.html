@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Customer Satisfaction
+        <br>Climate/Survey</h1>
+    <div class="container-main">
+        <div>
+            <p id="description">Please fill out the following so we may be able to better serve you in the future:</p>
+        </div>
+        <!--Form start-->
+        <form id="survey-form" action="#" method="post">
+
+            <!--Name-->
+            <div class="container-name">
+                <div class="label-name">
+                    <label for="name" id="name-label">*Name:</label>
+                </div>
+                <div class="response-name">
+                    <input type="text" id="name" placeholder="Enter your name" required></input>
+                </div>
+            </div>
+            <!--Email-->
+            <div class="container-email">
+                <div class="label-email">
+                    <label for="email" id="email-label">*Email:</label>
+                </div>
+                <div class="response-email">
+                    <input type="email" id="email" placeholder="Enter your email" required></input>
+                </div>
+            </div>
+            <!--Number/age-->
+            <div class="container-num">
+                <div class="label-num">
+                    <label for="number" id="number-label">*In years, how long have you been a customer?</label>
+                </div>
+                <div class="response-num">
+                    <input type="number" id="number" min="1" Max="50" placeholder="1-50"></input>
+                </div>
+            </div>
+            <!--Dropdown-->
+            <div class="container-drop">
+                <div class="label-drop">
+                    <label for="dropdown" id="dropdown-label">Description of current role:</label>
+                </div>
+                <div class="response-drop">
+                    <select name="dropdown" id="dropdown">
+                        <option value="self">Self-employed</option>
+                        <option value="employed">Employed</option>
+                        <option value="search">Searching</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--Radio start-->
+            <div class="container-radio">
+                <div class="label-radio">
+                    <label for="stars">Please rate how are we doing so far!
+                        <br>The value 5 being the highest.</label>
+                </div>
+                <div class="response-radio">
+                    <ul>
+                        <li>
+                            <input type="radio" name="stars" value="5" checked>5</li>
+                        <li>
+                            <input type="radio" name="stars" value="4">4</li>
+                        <li>
+                            <input type="radio" name="stars" value="3">3</li>
+                        <li>
+                            <input type="radio" name="stars" value="2">2</li>
+                        <li>
+                            <input type="radio" name="stars" value="1">1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Dropdown Start -->
+            <div class="container-drop2">
+                <div class="label-drop2">
+                    <label for="services">Out of these, pick your favorite:</label>
+                </div>
+                <div class="response-drop2">
+                    <select name="services" id="services">
+                        <option value="print">Print</option>
+                        <option value="design">Design</option>
+                        <option value="installation">Installation</option>
+                        <option value="fabrication">Fabrication</option>
+                    </select>
+                </div>
+            </div>
+            <!--Checkbox start-->
+            <div class="container-check">
+                <div class="label-check">
+                    <label for="checkbox" id="checkbox">What can we improve?
+                        <br>Check all that apply.</label>
+                </div>
+                <div class="response-check">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="prices"> Prices</li>
+                        <li>
+                            <input type="checkbox" value="turn-times"> Turn times</li>
+                        <li>
+                            <input type="checkbox" value="timely-resp"> Timely responses</li>
+                        <li>
+                            <input type="checkbox" value="large-sel"> Larger selection of products</li>
+                        <li>
+                            <input type="checkbox" value="quality"> Quality of product</li>
+                        <li>
+                            <input type="checkbox" value="warehouse"> Warehousing/Fulfillment</li>
+                        <li>
+                            <input type="checkbox" value="other"> Other</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Text Area start-->
+            <div class="container-area">
+                <div class="label-area">
+                    <label for="message">Leave us a comment or suggestion:</label>
+                </div>
+                <div class="response-area">
+                    <textarea name="message" rows="10" cols="30">Enter comment here...</textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit" id="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
